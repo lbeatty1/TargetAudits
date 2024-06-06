@@ -23,9 +23,6 @@ grid_emis_constraint = function(alphas){
   prob_by_bin[,prob:=alphas]
   
   grid_probs = emis_grid[prob_by_bin, on=.(count_bin, emis_bin)]
-  #there are likely some bins with no grid squares so just throw them out
-  #this will cause some options for optim that I'm not sure how to solve yet?
-  grid_probs = grid_probs[!is.na(ID),]
   
   well_prob = emis[grid_probs, on=.(ID)]
   ninspections= sum(well_prob$prob)

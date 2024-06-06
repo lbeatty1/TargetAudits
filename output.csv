@@ -1,2 +1,16 @@
-gridsize,nbins,budget,detected emissions uniform,detected emissions targeted,n audits targeted (should equal budget but good check)
-"1",0.2,5,10000,17027.9071826182,55432.5855433439,10000
+gridsize,nbins,budget,detected emissions uniform,detected emissions targeted,n audits targeted (should equal budget but good check),optimize message
+"1","0.1","5","5000","8514.00525011435","55069.7831793036","5000.01214705025","NLOPT_XTOL_REACHED: Optimization stopped because xtol_rel or xtol_abs (above) was reached."
+"1","0.1","5","10000","17028.0105002287","75398.0506710013","10000.0000000036","NLOPT_MAXEVAL_REACHED: Optimization stopped because maxeval (above) was reached."
+"1","0.1","5","50000","85140.0525011435","200559.826504053","50000.0000000024","NLOPT_FTOL_REACHED: Optimization stopped because ftol_rel or ftol_abs (above) was reached."
+"1","0.2","5","5000","8513.95359130908","35639.8896247742","4999.99999999991","NLOPT_XTOL_REACHED: Optimization stopped because xtol_rel or xtol_abs (above) was reached."
+"1","0.2","5","10000","17027.9071826182","55432.1617148662","10000.0000000006","NLOPT_MAXEVAL_REACHED: Optimization stopped because maxeval (above) was reached."
+"1","0.2","5","50000","85139.5359130909","158546.889459602","50000.0000000001","NLOPT_XTOL_REACHED: Optimization stopped because xtol_rel or xtol_abs (above) was reached."
+"1","0.2","10","5000","8513.95359130908","49777.3466217223","5000.0000000008","NLOPT_MAXEVAL_REACHED: Optimization stopped because maxeval (above) was reached."
+"1","0.2","10","10000","17027.9071826182","72541.8595267595","10000.0000000022","NLOPT_MAXEVAL_REACHED: Optimization stopped because maxeval (above) was reached."
+"1","0.2","10","50000","85139.5359130909","192886.369273044","50000.0000000002","NLOPT_MAXEVAL_REACHED: Optimization stopped because maxeval (above) was reached."
+"1","1","5","5000","8513.97712718594","23828.9828347466","5000","NLOPT_FTOL_REACHED: Optimization stopped because ftol_rel or ftol_abs (above) was reached."
+"1","1","5","10000","17027.9542543719","40987.2437646484","10000.0000164928","NLOPT_XTOL_REACHED: Optimization stopped because xtol_rel or xtol_abs (above) was reached."
+"1","1","5","50000","85139.7712718595","124885.471549909","50000.0000004646","NLOPT_XTOL_REACHED: Optimization stopped because xtol_rel or xtol_abs (above) was reached."
+"1","1","10","5000","8513.97712718594","32007.8021410337","5000.00000000006","NLOPT_XTOL_REACHED: Optimization stopped because xtol_rel or xtol_abs (above) was reached."
+"1","1","10","10000","17027.9542543719","48921.8927743829","10000.0000000104","NLOPT_MAXEVAL_REACHED: Optimization stopped because maxeval (above) was reached."
+"1","1","10","50000","85139.7712718595","144436.622776761","50000.0000000003","NLOPT_FTOL_REACHED: Optimization stopped because ftol_rel or ftol_abs (above) was reached."
