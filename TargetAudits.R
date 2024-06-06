@@ -243,3 +243,28 @@ for(gridloop in c(0.2, 1)){
     }
   }
 }
+
+output = read.csv('output.csv', row.names=NULL)
+
+ggplot(output, aes(fill=as.factor(gridsize), y=detected.emissions.targeted, x=as.factor(budget))) + 
+  geom_bar(position="dodge", stat="identity")+
+  ylab("Detected Emissions")+
+  xlab("Budget")+
+  theme_bw()
+
+ggsave(filename="Budget_Gridsize_Comparison.jpg",
+       width=8,
+       height=6,
+       device='jpeg')
+output = pivot_longer(output, cols=starts_with("detected.emissions."))
+
+ggplot(output%>%filter(gridsize==0.1, nbins==5))+
+  geom_bar(aes(fill=name, y=value, x=as.factor(budget)), position="dodge", stat="identity")+
+  xlab("Budget")+
+  ylab("Detected Emissions")+
+  theme_bw()
+
+ggsave(filename="Budget_Targeted_Comparison.jpg",
+       width=8,
+       height=6,
+       device='jpeg')
